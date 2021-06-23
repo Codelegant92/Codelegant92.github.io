@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-        <title>Yangbin Chen - Home</title>
+        <title>Yangbin Chen - Contact</title>
 
         <meta charset="utf-8">
         <meta name="description" content="">
@@ -22,6 +21,8 @@
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Qwigley" />
         <!-- Font awesome -->
         <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <!-- Google Map -->
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
    </head>
    <body>
@@ -30,8 +31,6 @@
    <div class="wrapper">
   	  <div class="col-md-12">
          <!-- Logo -->
-         <!--<div class="brand wow fadeIn" data-wow-delay="0.1s"> Yangbin Chen
-           <div class="title"> - Postdoctoral Research Fellow-  </div>-->
          <div class="brand wow fadeIn" data-wow-delay="0.1s"> Yangbin Chen
            <div class="title"> - dongyiwu [AT] gmail [DOT] com -  </div>
          </div>
@@ -48,40 +47,29 @@
                 </button>
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
                 <div class="navbar-brand"><a href="#">Yangbin Chen</a>
-                <div class="title"> - Postdoctoral Research Fellow - </div>
+                <div class="title"> - phd in computer science - </div>
                 </div>
+                 
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                   <!--<li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="index.html">Home1</a>
-                            </li>
-                            <li>
-                                <a href="index-work.html">Home2</a>
-                            </li>
-                        </ul>
-                    </li>-->
-                    <li class="active">
-                       <a href="index.html">Home</a>
-                    </li>
+                    <li>
+                      <a href="index.html">Home</a>
                     <li>
                        <a href="about.html">About</a>
                     </li>
                     <li>
-                      <a href="publication.html">Publication</a>
+                       <a href="publication.html">Publication</a>
                     </li>
                     <li>
-                      <a  href="resume.html">Resume</a>
-                    </li>
-                     <li>
-                      <a href="news.html">News</a>
+                       <a  href="resume.html">Resume</a>
                     </li>
                     <li>
-                      <a href="contact.html">Contact</a>
+                       <a href="news.html">News</a>
+                    </li>
+                    <li class="active">
+                       <a href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -89,54 +77,46 @@
          </nav>
          <!-- End nav -->
 
-         <!-- Start main image and the text below -->
-         <div class="col-md-12 wow fadeIn" data-wow-delay="0.1s">
-              <!--<img src="img/main-banner.jpeg" alt="img" class="resp main-image"/>-->
-              <img src="img/main-banner.jpeg" alt="img" class="center"/>
-                  <h1>motto</h1>
+
+         <!-- Start margin -->
+         <div class="margin-contact">
+             <!-- Start left column -->
+             <div class="box-contact col-md-4 col-xs-offset-1">
+               <h3 class="heading-inner">Get in touch</h3>
                   <div class="hr"></div>
-                  <h2>我想塗去一切不幸 / I want to wipe away all the unfortunate <br>
-                      我想在大地上 / I think in the earth <br>
-                      畫滿窗子 / Painted with windows <br>
-                      讓所有習慣黑暗的眼睛 / Let all habits dark eyes <br>
-                      都習慣光明 / All light <br>
-                      ---- 顧城 Gu Cheng <br>
-                  </h2>
-                  <!--<div class="text-center">
-                     <a href="blog.html" class="home-btn btn">View blogs</a>
-                  </div>-->
-          </div>
-          <!-- End main image and the text below -->
-
-          <!-- Start left column -->
-          <div class="box-home col-md-4 col-xs-offset-1">
-               <h3>
-               <span class="text-left">One paper </span> accepted by Interspeech 2021. 
-               <a href="news.html">read more <i class="fa fa-angle-right"></i></a>
-               </h3>
-          </div>
-          <!-- End left column -->
-             
-          <!-- Start right image -->
-          <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
-             <div class="first">
-             <div class="square wow fadeInDown" data-wow-delay=".5s"></div>
+                    <h6><strong>Address:</strong> Room 727, Ho Sin-Hang Engineering Building, CUHK, Shatin, Hong Kong
+                    <span><strong>Email: </strong><a href="mailto:dongyiwu@gmail.com"> dongyiwu [at] gmail [dot] com
+                    </a></span>
              </div>
-             <img src="img/photo.png" alt="img" class="photo-home"/> 
-          </div>
-          <!-- End right image -->
+             <!-- End left column -->
+             
+             <!-- Start right image -->
+             <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
+               <img src="img/contact.jpg" alt="img" class="photo-contact"/> 
+             </div>
+             <!-- End right image -->
 
-          <!-- Start footer -->
-          <div class="footer col-md-6 col-xs-offset-3">
-             <h5>Copyright 2021
-                 <a href="https://scholar.google.com/citations?hl=zh-TW&user=87OYj0YAAAAJ&view_op=list_works&sortby=pubdate"><i class="fa fa-google fa-1x icon1"></i></a>
+         </div>
+         <!-- End margin -->
+         
+           
+         <!-- Google map (adress on map can be changed in app.js file) -->
+         <div class="col-md-12 wow fadeIn" data-wow-delay="0.1s">
+         <div id="map-canvas"></div>       
+         </div><!-- End google map -->
+         
+
+         <!-- Start footer -->
+         <div class="footer col-md-6 col-xs-offset-3">
+              <h5>Copyright 2021
+              <a href="https://scholar.google.com/citations?hl=zh-TW&user=87OYj0YAAAAJ&view_op=list_works&sortby=pubdate"><i class="fa fa-google fa-1x icon1"></i></a>
                  <a href="https://github.com/Codelegant92"><i class="fa fa-github fa-1x icon1"></i></a>
                  <a href="#"><i class="fa fa-linkedin fa-1x icon1"></i></a>
                  <a href="#"><i class="fa fa-instagram fa-1x icon1"></i></a>
-             </h5>
-          </div>
-          <!-- End footer -->
-          
+              </h5>
+         </div>
+         <!-- End footer -->
+
       </div>
       <!-- End col-md-12 -->
 
@@ -148,6 +128,8 @@
    <script src="js/jquery-1.11.0.js"></script>
    <!-- Boostrap JS -->
    <script src="js/bootstrap.min.js"></script>
+   <!-- Google Map JS -->
+   <script src="js/app.js"></script>
    <!-- Smooth scroll JS -->
    <script src="js/smoothscroll.js"></script>
    
